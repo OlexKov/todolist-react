@@ -12,7 +12,7 @@ const Task = ({ id, title, status, priority, deadline, deleteHendler }) => {
     return (
         <div className={`task ${stat ? 'task-done' : ''}`} >
             <input type="checkbox" onChange={setStatus} checked={stat} />
-            {priority && <PriorityHighIcon  className="text-danger"/>}
+            {priority && <PriorityHighIcon className="text-danger" />}
             <span className={`title ${stat ? 'through' : ''}`}> {title}</span>
             {
                 (deadline !== undefined && !stat) &&
@@ -20,7 +20,7 @@ const Task = ({ id, title, status, priority, deadline, deleteHendler }) => {
                     <span className="text-white">{deadline.toLocaleDateString()}</span>
                 </div>
             }
-            <ClearIcon onClick={() => { deleteHendler(id) }} className="close"/>
+            <ClearIcon onClick={() => { deleteHendler(id) }} className="close" />
         </div>
     )
 }

@@ -1,5 +1,4 @@
-.list
-{
+.list {
   border-radius: 10px;
   border-width: 1px;
   border-style: solid;
@@ -7,19 +6,17 @@
   padding: 10px;
 }
 
-.list > div:nth-child(even) 
-{
-  background-color: #9ca7d9 ;
+.list>div:nth-child(even) {
+  background-color: #9ca7d9;
 }
 
-.todo-list{
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+.todo-list {
+  width: 75%;
+  margin: 30px auto 0 auto;
 }
 
-.todo-list ,
-.list{
-    display: flex;
-    flex-direction: column;
+.todo-list,
+.list {
+  display: flex;
+  flex-direction: column;
 }

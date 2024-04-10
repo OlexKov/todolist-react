@@ -1,45 +1,40 @@
 .through {
-    text-decoration-line: line-through;
+  text-decoration-line: line-through;
 }
 
-.bg-default{
-  background-color:#bbc4ed;
+.bg-default {
+  background-color: #bbc4ed;
 }
 
-.task-done{
+.task-done {
   background-color: #dfe3f7 !important;
 }
 
-.close
-{
-    cursor: pointer;
-    font-weight: bolder;
-    color: red;
-   
+.close {
+  cursor: pointer;
+  font-weight: bolder;
+  color: red;
 }
 
-.title{
-    font-weight: bold;
-    color: black;
+.title {
+  font-weight: bold;
+  color: black;
 }
-.date{
-    background-color: rgb(133, 150, 175);
-    border-radius: 3px;
-    padding:0 4px 0 4px ;
-
-}
-
-input[type='checkbox']{
-   
-    transform: scale(1.8);
+.date {
+  background-color: rgb(133, 150, 175);
+  border-radius: 3px;
+  padding: 0 4px 0 4px;
 }
 
-.task{
-   
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-    background-color:#bbc4ed;
+input[type="checkbox"] {
+  transform: scale(1.8);
+}
+
+.task {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  background-color: #bbc4ed;
 }
