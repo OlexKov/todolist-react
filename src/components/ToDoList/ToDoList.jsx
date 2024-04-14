@@ -15,7 +15,7 @@ const ToDoList = () => {
     const [isFormOpen, setIsFormOpen] = useState(false);
    
     function handleClickOpen(id) {
-        setIsDialogOpen(x=>true);
+        setIsDialogOpen(true);
         if(id) 
           setDelTask(tasks.find(x => x.id === id));
     };
