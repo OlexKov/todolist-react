@@ -14,26 +14,26 @@ const ToDoList = () => {
     const [delTask, setDelTask] = useState(null);
     const [isFormOpen, setIsFormOpen] = useState(false);
    
-    function handleClickOpen(value) {
+    function handleClickOpen(id) {
         setIsDialogOpen(x=>true);
-        if(value) 
-          setDelTask(tasks.find(x => x.id === value));
+        if(id) 
+          setDelTask(tasks.find(x => x.id === id));
     };
 
     function addNewTask(task){
         setIsFormOpen(false);
-        if(task == null) return;
-        tasksSet([...tasks,new TaskModel(task)])
+        if(task) 
+           tasksSet([...tasks,new TaskModel(task)])
     }
 
     function handleClose(value) {
         setIsDialogOpen(false);
         if(value){
             if (delTask) {
-            const index = tasks.indexOf(delTask);
-            const copy = [...tasks];
-            copy.splice(index, 1);
-            tasksSet(copy);
+               const index = tasks.indexOf(delTask);
+               const copy = [...tasks];
+               copy.splice(index, 1);
+               tasksSet(copy);
             }
             else tasksSet([]);
         }
