@@ -15,7 +15,7 @@ const Task = ({ id, title, status, priority, deadline, deleteHendler }) => {
             {priority && <PriorityHighIcon className="text-danger" />}
             <span className={`title ${stat ? 'through' : ''}`}> {title}</span>
             {
-                (deadline !== undefined && !stat) &&
+                (deadline && !stat) &&
                 <div className="date">
                     <span className="text-white">{deadline.toLocaleDateString()}</span>
                 </div>
